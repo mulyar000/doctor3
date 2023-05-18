@@ -1,0 +1,135 @@
+section.main{
+    background: url('../../assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-top: $header_height;
+    background-size: cover;
+    padding-bottom: 60px;
+    padding-top: 40px;
+
+    @media screen and (max-width: 800px) {
+        background-position: -100px -300px;
+    } 
+    .main_sections{
+        
+        &__item{
+
+            &.doctor{
+                position: relative;
+                text-align: center;
+                .doctor_banner{
+                    position: absolute;
+                    left: 50%;
+                    bottom: 20px;
+                    transform: translateX(-50%);
+                    background: yellow;
+                    border-radius: 20px;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 0px 3px 8px 0px rgba(54, 169, 225, 0.07);
+                    width: 276px;
+                    height: 108px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 5px;
+                    @media screen and (max-width: 800px) {
+                        bottom: 0px;
+                    } 
+                    .doctor_banner__title{
+                            font-size: 14px;
+                            color: rgb(54, 169, 225);
+                            font-weight: 800;
+                            text-transform: uppercase;
+                            line-height: 1.2;
+                            text-align: center;                 
+                    }
+                    .doctor_banner__subtitle{
+                            font-size: 14px;
+                            color: rgb(0, 0, 0);
+                            line-height: 1.2;
+                            text-align: center;
+                            font-weight: 500;
+
+                          
+                    }
+                }
+            }
+        }
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        } 
+        .main_title{
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 15px;
+            position: relative;
+            @media screen and (max-width: 800px) {
+                margin-top: 20px;
+            }
+            .main_checked{
+                position: absolute;
+                left: -30px;
+                top: -10px;
+                @media screen and (max-width: 800px) {
+                    top: -40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                } 
+            }
+        }
+        .main_subtitle{
+            font-size: 14px;
+            max-width: 350px;
+            font-weight: 500;
+            text-align: center;
+            position: relative;
+            @media screen and (max-width: 800px) {
+                display: block;
+                margin: 0 auto;
+            } 
+        }
+        .main_subs{
+            margin-top: 40px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 3px 8px 0px rgba(54, 169, 225, 0.07);
+            width: 384px;
+            padding-bottom: 20px;
+            padding-top: 30px;
+            &_container{
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            @media screen and (max-width: 800px) {
+                margin: 15px auto;
+            } 
+              
+            &__item{
+                width: 70px;
+                height: 70px;
+                background: black;
+                border-radius: 7px;
+                background-size: 110%;
+                background-position: center;
+            }
+            &_text{
+                margin-left: 40px;
+                margin-top: 15px;
+                font-weight: 500;
+                @media screen and (max-width: 400px) {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+    }
+}
+  
